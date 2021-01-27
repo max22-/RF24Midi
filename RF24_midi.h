@@ -3,10 +3,12 @@
 
 #ifdef ARDUINO
     #include <Arduino.h>
+    #include <RF24.h>
 #else
     #include <cstdint>
+    #include <RF24/RF24.h>
 #endif
-#include <RF24.h>
+
 
 class RF24Midi {
 public:
