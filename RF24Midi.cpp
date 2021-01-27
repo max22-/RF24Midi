@@ -1,4 +1,4 @@
-#include "RF24_midi.h"
+#include "RF24Midi.h"
 
 RF24Midi::RF24Midi(uint16_t ce_pin, uint16_t csn_pin, uint64_t midiOutPipe, uint64_t midiInPipe) 
 : radio(ce_pin, csn_pin), midiOutPipe(midiOutPipe), midiInPipe(midiInPipe) {}
