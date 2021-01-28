@@ -85,6 +85,7 @@ void RF24Midi::loop()
 void RF24Midi::delay(unsigned long ms)
 {
     auto tStart = millis();
+    #warning 100% CPU usage on the Raspberry Pi... to fix later
     while(millis() - tStart < ms)
         loop();
 }
